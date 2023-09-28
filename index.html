@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer></script>
+    <script src="modals.js" defer></script>
+    <title>colors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <div class="round">Round: 1</div>
+        <div class="time">Time: 1.00</div>
+        <div class="lives">❤️ 3</div>
+      </div>
+      <div class="outcome"></div>
+      <div class="colornames">
+        <p>green</p>
+      </div>
+      <button class="startbutton">Start</button>
+      <div class="line"></div>
+
+      <div class="colorbuttons">
+        <button class="color" id="button1"></button>
+        <button class="color" id="button2"></button>
+        <button class="color" id="button3"></button>
+        <button class="color" id="button4"></button>
+      </div>
+    </div>
+    <div id="startModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-content-head">
+          <p class="p1">Welcome to &nbsp;</p>
+          <div class="colors">
+            <p class="c">c</p>
+            <p class="o">o</p>
+            <p class="l">l</p>
+            <p class="o">o</p>
+            <p class="r">r</p>
+            <p class="s">s</p>
+            <p>!</p>
+          </div>
+        </div>
+        <p>
+          Press the button that contains the color of the colorname, not the
+          color in which the name is written.
+          <br /><br />
+          You have one second to react - so be quick!
+        </p>
+        <button class="close" id="closeModal">Ok</button>
+      </div>
+    </div>
+
+    <div id="secondModal" class="modal2">
+      <div class="modal-content2">
+        <p>Play again?</p>
+        <div class="modalbuttons">
+          <div class="restart">
+            <button class="restart" id="restart">Yes</button>
+          </div>
+          <div clas="close">
+            <button class="close2" id="endModal">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="modal_overlay" class="modal_overlay"></div>
+  </body>
+</html>
